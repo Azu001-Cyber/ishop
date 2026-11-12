@@ -3,7 +3,7 @@
 export default function Caption({text, className}){
     return(
         <>
-            <p className={className}>{text}</p>
+            <p className={`text-muted ${className}`}>{text}</p>
         </>
     )
 }

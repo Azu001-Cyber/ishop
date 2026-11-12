@@ -8,10 +8,11 @@ export default function Page() {
         <div className="bg-bg text-ink">
             <TopBar />
 
-            <main className="max-w-shop px-5">
-                <div>
-                    <h1 className="text-h1">Your products. One link. Your own online shop.</h1>
-                    <p className="">Create a simple online store front, list your products, and share it with customers on WhatsApp and anywhere else.</p>
+            <main className="max-w-sm px-5 flex flex-col max-h-96 space-y-5">
+
+                <div className="space-y-5">
+                    <h1 className="text-h1">Your products. One link. <br /> Your own online shop.</h1>
+                    <p className="text-muted">Create a simple online store front, list your products, and share it with customers on WhatsApp and anywhere else.</p>
                 </div>
 
                 <div className="flex flex-col gap-5">

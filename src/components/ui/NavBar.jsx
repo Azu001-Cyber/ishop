@@ -1,13 +1,13 @@
-import Button from "./Button"
 
-export default function NavBar(){
+
+export default function NavBar({children}){
     return(
-        <header>
+        <>
+            <header>
                 <nav>
-                    <Button label={'Back'} className={'btn-ghost'}/>
+                    {children}
                 </nav>
-        
-                <h2>Create Shop</h2>
-        </header>
+            </header>
+        </>
     )
 }

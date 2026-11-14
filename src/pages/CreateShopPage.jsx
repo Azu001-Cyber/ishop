@@ -1,4 +1,4 @@
-import CreateShop from "../components/CreateShop";
+import CreateShop from "../components/ui/CreateShop";
 import Button from "../components/ui/Button";
 import NavBar from "../components/ui/NavBar";
 import { Link } from "react-router-dom";

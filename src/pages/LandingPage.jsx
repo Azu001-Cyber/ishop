@@ -16,9 +16,9 @@ export default function Page() {
                 </div>
 
                 <div className="flex flex-col gap-5">
-                    <Button to={'/create-shop'} className={'btn min-h-control'} label={'Create your shop'}
+                    <Button to={'/create-shop'} className={'btn-ghost min-h-control'} label={'Create your shop'}
                     />
-                    <Button className={'btn-ghost min-h-control'} label={'See how it works'}/>
+                    <Button to={'/waiting-list'} className={'btn min-h-control'} label={'Become an early seller'}/>
                 </div>
 
 

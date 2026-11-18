@@ -1,6 +1,6 @@
 
-import Caption from '../ui/Caption' 
-import Button from '../ui/Button'
+import Caption from '../../components/ui/Caption' 
+import Button from '../../components/ui/Button'
 
 export default function JoinList(){
     return (
@@ -40,9 +40,9 @@ export default function JoinList(){
                     <input type="checkbox" className='border border-line'/>
                     <p>Yes, i agree to receive iShop updates by email and WhatsApp. I can unsubscribe at any time.</p>
                 </div>
-                <div>
-                    <Button label={'Join the waitlist'} className={'btn text-white'}/>
-                    <Caption text={'We will only contact you about iShop updates and early access with your permission.'}/>
+                <div className='p-5'>
+                    <Button label={'Join the waitlist'} className={'btn w-full max-w-full'}/>
+                    <Caption text={'We will only contact you about iShop updates.'} className={'justify-start'}/>
                 </div>
             </form>
         </>

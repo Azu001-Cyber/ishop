@@ -12,7 +12,7 @@ const content = [
     },
     {
         id:'3',
-        question:'When does iShop lunch',
+        question:'When does iShop lunch?',
         answer:'Soon. Waitlist members hear first, by email.'
     }
 ]
@@ -20,14 +20,15 @@ const content = [
 export default function Question(){
     return(
         <>
+            <div className="">
             {content.map( (data) => (
-                <div key={data.id}>
-                    <h3>{data.question}</h3>
-                    <p>{data.answer}</p>
+                <div key={data.id} className="border-b- mb-5">
+                    <h3 className="font-bold">{data.question}</h3>
+                    <p className="text-muted">{data.answer}</p>
                 </div>
                 
             ))}
-            <hr />
+            </div>
         </>
     )
 }

@@ -20,18 +20,21 @@ const details = [
 
 export default function HowItWorks(){
     return(
-        <>
+        <>  
+            <div className="grid grid-cols-1 md:grid-cols-3">
                 {
-                    details.map((detail, index) => (
-                        <div key={index}>
-                            <div>{detail.id}</div>
+                    details.map((detail) => (
+                        <div key={detail.id} className="flex space-x-3">
+                            <div className="border border-line rounded-[50%] flex  items-center font-bold p-4 w-10 h-10 ">{detail.id}</div>
                             <div>
-                                <h3>{detail.title}</h3>
-                                <p>{detail.description}</p>
+                                <h3 className="font-bold">{detail.title}</h3>
+                                <p className="text-muted">{detail.description}</p>
                             </div>
                         </div>
                     ))
                 }
+
+            </div>
         </>
     )
 }

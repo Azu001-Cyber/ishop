@@ -1,6 +1,6 @@
-import Button from "../components/ui/Button";
-import TopBar from "../components/ui/TopBar";
-import Caption from "../components/ui/Caption";
+import Button from "../../components/ui/Button";
+import TopBar from "../../components/ui/TopBar";
+import Caption from "../../components/ui/Caption";
 
 
 export default function Page() {
@@ -8,7 +8,7 @@ export default function Page() {
         <div className="bg-bg text-ink">
             <TopBar />
 
-            <main className="max-w-sm px-5 flex flex-col max-h-96 space-y-5">
+            <main className="px-5 p-5 flex flex-col max-h-96 space-y-5">
 
                 <div className="space-y-5">
                     <h1 className="text-h1">Your products. One link. <br /> Your own online shop.</h1>
@@ -16,7 +16,7 @@ export default function Page() {
                 </div>
 
                 <div className="flex flex-col gap-5">
-                    <Button to={'/create-shop'} className={'btn-ghost min-h-control'} label={'Create your shop'}
+                    <Button to={'/coming-soon'} className={'btn-ghost min-h-control'} label={'Create your shop'}
                     />
                     <Button to={'/waiting-list'} className={'btn min-h-control'} label={'Become an early seller'}/>
                 </div>

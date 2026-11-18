@@ -135,7 +135,7 @@
   border-radius: 6px; 
   font-weight: 500;
   background: var(--bg); 
-  color: var(--ink); 
+  color: var(--ink);
   border: 1px solid var(--line);
   transition: background-color 150ms ease-out;
   &:hover { background: var(--surface); }

@@ -1,8 +1,8 @@
 import CreateShop from "../components/ui/CreateShop";
-import Button from "../components/ui/Button";
+import Button from "../../components/ui/Button";
 import NavBar from "../components/ui/NavBar";
 import { Link } from "react-router-dom";
-import Caption from "../components/ui/Caption";
+import Caption from "../../components/ui/Caption";
 
 import { useEffect, useState } from "react";
 

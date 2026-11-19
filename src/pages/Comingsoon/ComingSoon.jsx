@@ -1,4 +1,4 @@
-import TopBar from "../../components/ui/TopBar"
+import TopBar from "../../components/layout/NavBar"
 
 export default function ComingSoon(){
     return(

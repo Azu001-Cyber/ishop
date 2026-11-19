@@ -1,13 +1,16 @@
+import { Outlet } from "react-router-dom"
 
-
-export default function NavBar({children}){
+export default function NavBar({children, className}){
     return(
         <>
             <header>
-                <nav>
+                <nav className={className}>
                     {children}
                 </nav>
             </header>
+            <main>
+                <Outlet/>
+            </main>
         </>
     )
 }

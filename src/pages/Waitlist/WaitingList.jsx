@@ -1,12 +1,12 @@
 import Button from "../../components/ui/Button"
-import HowItWorks from "../../components/ui/HowitWorks"
-import ShopDemo from "../../components/ui/ShopDemo"
-import WaitingListForm from '../../components/ui/WaitingListForm'
-import TopBar from "../../components/ui/TopBar"
-import Benefits from "../../components/ui/Benefits"
-import Question from "../../components/ui/Question"
-import Notification from "../../components/ui/Notification"
-import WaitlistProgress from "../../components/ui/WaitlistProgress"
+import HowItWorks from "../Waitlist/HowitWorks"
+import ShopDemo from "../Waitlist/ShopDemo"
+import WaitingListForm from '../../pages/Waitlist/WaitingListForm'
+import TopBar from "../../components/layout/TopBar"
+import Benefits from "../Waitlist/Benefits"
+import Question from "../Waitlist/Question"
+// import Notification from "../../components/ui/Notification"
+import WaitlistProgress from "../Waitlist/WaitlistProgress"
 
 import { useEffect, useState } from "react"
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { Outlet } from "react-router-dom";
 
 export default function TopBar({ title = "iShop", children}) {
     return (
@@ -17,6 +17,9 @@ export default function TopBar({ title = "iShop", children}) {
                 </div>
             </div>
             </header>
+            <main>
+                <Outlet/>
+            </main>
         </>
     );
 }

@@ -1,11 +1,11 @@
 
 
-export default function CreateShop({children, className}){
+export default function CreateShop({children, className, onEvent}){
     return(
         <>
-            <div className={`${className}`}>
+            <form className={`${className}`} onSubmit={onEvent}>
                 {children}
-            </div>
+            </form>
         </>
     )
 }

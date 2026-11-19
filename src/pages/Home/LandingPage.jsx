@@ -1,14 +1,12 @@
 import Button from "../../components/ui/Button";
-import TopBar from "../../components/ui/TopBar";
 import Caption from "../../components/ui/Caption";
 
 
 export default function Page() {
     return (
-        <div className="bg-bg text-ink">
-            <TopBar />
+        <div className="space-y-20">
 
-            <main className="px-5 p-5 flex flex-col max-h-96 space-y-5">
+            <main className="px-5 p-5 flex flex-col max-h-96 space-y-10">
 
                 <div className="space-y-5">
                     <h1 className="text-h1">Your products. One link. <br /> Your own online shop.</h1>
@@ -16,15 +14,15 @@ export default function Page() {
                 </div>
 
                 <div className="flex flex-col gap-5">
-                    <Button to={'/coming-soon'} className={'btn-ghost min-h-control'} label={'Create your shop'}
+                    <Button to={'/create-shop'} className={'btn-ghost min-h-control'} label={'Create your shop'}
                     />
-                    <Button to={'/waiting-list'} className={'btn min-h-control'} label={'Become an early seller'}/>
+                    <Button to={'*'} className={'btn min-h-control'} label={'Become an early seller'}/>
                 </div>
 
 
             </main>
 
-            <div className="border-t border-line px-5 mt-60">
+            <div className="border-t border-line px-5">
                 <Caption text={"Customers don't need an account."}/>
                 <Caption text={"Orders happen in your WhatsApp chat."}/>
             </div>

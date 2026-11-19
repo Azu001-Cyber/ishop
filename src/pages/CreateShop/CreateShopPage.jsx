@@ -1,6 +1,6 @@
-import CreateShop from "../components/ui/CreateShop";
+import CreateShop from "../../components/form/CreateShop";
 import Button from "../../components/ui/Button";
-import NavBar from "../components/ui/NavBar";
+import NavBar from "../../components/layout/NavBar";
 import { Link } from "react-router-dom";
 import Caption from "../../components/ui/Caption";
 
@@ -18,10 +18,6 @@ export default function CreateShopPage(){
     useEffect(() => {
         console.log(shopdata)
 
-        // fetch.get('http://localhost:3001/shopData')
-        // .then(response => {
-        //     console.log(response.data)
-        // })
     })
 
     const handleCreateShop = (event) => {
@@ -36,18 +32,17 @@ export default function CreateShopPage(){
         Setshopdata(NewShop)
     }
     return(
-        <div>
-            <NavBar>
-                <div className="flex justify-between h-14 px-5 border-b border-line items-center">
-                    <Link to={'/'} role="navigation" className="max-h-tap underline font-bold"
+        <div className="">
+            <NavBar className={"max-w-full w-full flex gap-10 h-14 px-5 border-b border-line items-center justify-center"}>
+                
+                    <Link to={'/'} className="max-h-tap underline font-bold"
                     >Back</Link>
-                    <h2 className="text-h2">Create your shop</h2>
-                </div>
+                    <h2 className="text-h2 mx-auto">Create your shop</h2>
+                
             </NavBar>
-            <main className="px-5 flex flex-col">
-                <CreateShop>
-                    <form action="" className="flex flex-col gap-5 py-5">
 
+            <main className="flex flex-col gap-10">
+                <CreateShop className={"space-y-5 py-5 px-5"}>
                         <div className="flex flex-col">
                             <label htmlFor="shop_name" className="font-bold" onSubmit={handleCreateShop}>
                                 Shop name
@@ -59,7 +54,7 @@ export default function CreateShopPage(){
                             <label htmlFor="shop_description" className="font-bold">
                                 Shop description
                             </label>
-                            <textarea name="shop_description" id="shop_decription" placeholder="What do you sell?" className="border border-line p-4 rounded-control w-full h-[20vh]" value={shopdata.shop_description} onChange={(e) => Setshopdata(e.target.value)}></textarea>
+                            <textarea name="shop_description" id="shop_decription" placeholder="What do you sell?" className="border border-line p-4 rounded-control w-full" value={shopdata.shop_description} onChange={(e) => Setshopdata(e.target.value)}></textarea>
                         </div>
 
                         <div>
@@ -69,14 +64,13 @@ export default function CreateShopPage(){
                             <input type="text" id="shop_phonenumber" name="shop_phonenumber"  placeholder="0801 234 5678" className="border border-line p-4 rounded-control w-full" value={shopdata.shop_phonenumber} onChange={(e) => Setshopdata(e.target.value)} />
                             <Caption text={"Buyers will message this number."}/>
                         </div>
-                        
-                    </form>
                 </CreateShop>
+                
+                <div className=" border-t border-line p-5">
+                    <Button label={'Create Shop'} className={'btn min-h-control w-full'} to={'/'}/>
+                </div>
             </main>
 
-            <div className=" border-t border-line mt-10">
-                <Button label={'Create Shop'} className={'btn m-5 w-full'} to={'/'}/>
-            </div>
         </div>
     )
 }
